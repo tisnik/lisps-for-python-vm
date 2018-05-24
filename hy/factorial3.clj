@@ -11,13 +11,17 @@
 ;      Pavel Tisnovsky
 ;
 
-; rekurzivní výpočet faktoriálu
+; rekurzivní výpočet faktoriálu - TCO
+
+(require [hy.contrib.loop [loop]])
 
 (defn factorial
     [n]
-    (if (<= n 1)
-        1
-        (* n (factorial (- n 1)))))
+    (loop [[cnt n]
+           [acc 1]]
+        (if (zero? cnt)
+             acc
+             (recur (dec cnt) (* acc cnt)))))
 
 (print (factorial 10))
 

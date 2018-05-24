@@ -11,7 +11,7 @@
 ;      Pavel Tisnovsky
 ;
 
-; nerekurznivní výpočet faktoriálu
+; nerekurzivní výpočet faktoriálu
 
 (defn factorial
     [n]
