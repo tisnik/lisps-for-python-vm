@@ -19,6 +19,8 @@
 
 ; výraz pro přečtení prvku vektoru
 (get vektor 1)
+(get vektor -1)
+(get vektor -2)
 
 ; speciální funkce pro významné prvky vektoru
 (first vektor)
