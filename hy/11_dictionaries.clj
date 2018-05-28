@@ -21,6 +21,17 @@
 (get d1 :name)
 (get d1 :xyname)
 
+(setv d2 {:id 1 :name "Eda" :surname "Wasserfall" :actors ["Genadij Rumlena" "Pavel Vondruška"]})
+(get d2 :actors 1)
+(get d2 :actors 0)
+
+(setv d3 {})
+(assoc d3 :id 10)
+(assoc d3 :name "Eda")
+(assoc d3 :surname "Wasserfall")
+
+(del (get d3 :surname))
+
 (dict-comp x (str x) [x (range 1 11)])
 
 (dict-comp x (* x x) [x (range 1 11)])
@@ -35,3 +46,6 @@
 
 (dict-comp x (* x x) [x (range 1 11)] (div3 x))
 
+(dict (zip [:id :name :surname] [1 "Eda" "Wasserfall"]))
+
+(-> (zip (range 10) (range 10 1 -1)) dict)
