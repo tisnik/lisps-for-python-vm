@@ -1,0 +1,28 @@
+from datetime import date as d
+date = d(2018, 2, 28)
+print(date)
+print(date.year)
+print(date.month)
+print(date.day)
+now1 = d.today()
+print(now1)
+now2 = d.today()
+print(now2)
+print('-------------------------------')
+from test_module import *
+print(THE_ANSWER)
+print(THE_ANSWER)
+print(multiply_two_numbers(6, 7))
+print(multiply_two_numbers(6, 7))
+print('-------------------------------')
+import test_module as t
+print(t.THE_ANSWER)
+print(t.THE_ANSWER)
+print(t.multiply_two_numbers(6, 7))
+print(t.multiply_two_numbers(6, 7))
+print('-------------------------------')
+u = uber_class(42)
+print(u)
+print(u.compute_square())
+print(u.compute_square())
+
