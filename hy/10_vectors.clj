@@ -60,6 +60,7 @@
 
 ; přidání prvku do vektoru (na jeho konec)
 (.append vektor 5)
+(vektor.append 6)
 
 ; dvourozměrný vektor (matice)
 (setv matice [[1 2 3] [4 5 6] [7 8 9]])
@@ -67,3 +68,6 @@
 ; nepravidelná matice
 (setv matice2 [[1] [2 3] [4 5 6] [7 8 9 10]])
 
+; získání "plochého" seznamu
+(flatten matice)
+(flatten matice2)
