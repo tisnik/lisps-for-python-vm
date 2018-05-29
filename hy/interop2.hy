@@ -43,12 +43,12 @@
 
 
 ; Privátní funkce
-(defn **hidden**
+(defn -hidden
     [x]
     (+ x 1))
 
 ; Funkce psaná velkými písmeny
-(defn *hidden*
+(defn *major*
     [x]
     (+ x 1))
 
