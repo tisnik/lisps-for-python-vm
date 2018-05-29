@@ -15,4 +15,7 @@ print(is_odd(0))
 print(is_odd(1))
 print(is_odd(2))
 
-print(HIDDEN(1))
+print(MAJOR(1))
+
+import interop2
+print(interop2._hidden(1))

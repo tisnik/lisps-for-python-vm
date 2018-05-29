@@ -28,3 +28,7 @@ def deg_>rad(angle):
 def *HIDDEN*(x):
     return x + 1
 
+
+def _hidden(x):
+    return x + 1
+
