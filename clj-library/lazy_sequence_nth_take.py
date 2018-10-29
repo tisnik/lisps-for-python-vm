@@ -23,3 +23,11 @@ print(item)
 
 item = nth(sequence, 10)
 print(item)
+
+sequence = range()
+s1 = take(10, sequence)
+s2 = take(10, sequence)
+s3 = take(10, sequence)
+print(list(s1))
+print(list(s2))
+print(list(s3))
